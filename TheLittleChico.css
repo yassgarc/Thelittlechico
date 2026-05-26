@@ -1,0 +1,103 @@
+/*body contains header, main, footer*/
+header,
+main,
+footer {
+    flex: 1;
+}
+main {
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+
+/*the three images in the main section*/
+.images {
+    text-align: center;
+}
+figure {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+figure img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.6s ease;
+}
+figure:hover img{
+    transform: scale(1.20);
+    cursor: pointer;
+}
+figcaption {
+    font-style: italic;
+    font-size: 12px;
+}
+/*the two menus in the main*/
+.menus {
+    flex: 1;
+   display: flex;
+   padding: 5px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 2.5em;
+   background-color: rgb(246, 246, 234);
+}
+.menus > div {
+    flex: 1 1 250px;
+}
+.starters,
+.mains, 
+.desserts {
+    flex: 1;
+}
+.starters-items,
+.mains-items,
+.desserts-items {
+    list-style: none;
+    padding: 0;
+}
+.starters-items li,
+.mains-items li,
+.desserts-items li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.starters-items li span,
+.mains-items li span,
+.desserts-items li span {
+    justify-content: space-between;
+}
+.allergens {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+/*media query*/
+
+@media (max-width: 600px) {
+    main {
+        margin: 15px;
+    }
+    figure {
+        width: 70%;
+    }
+    .menus {
+        gap: 0;
+    }
+    .menus > div {
+        padding: 5px;
+    }
+    .starters-items li,
+    .mains-items li,
+    .desserts-items li {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .allergens {
+        text-align: center;
+    }
+}

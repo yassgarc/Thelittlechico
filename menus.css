@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    margin: 30px;
+}
+.menus-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.menus-nav a{
+    text-decoration: none;
+    color: black;
+    padding: 0 40px;
+    border: 10px solid rgb(246, 246, 234);
+    border-radius: 20px;
+    background-color: rgb(246, 246, 234);
+    transition: transform 0.2s ease, 0.1s ease;
+}
+.menus-nav a:hover {
+    color: black;
+    transform: scale(130%);
+}

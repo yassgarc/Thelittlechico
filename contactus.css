@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+main {
+    margin: 30px;
+}
+.forms-container {
+    display: flex;
+    justify-content: center;
+}
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 10px beige solid;
+    width: auto;
+}
+.row {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+.lastrow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .row, .lastrow {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
